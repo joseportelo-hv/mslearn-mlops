@@ -4,6 +4,11 @@ on:
   workflow_dispatch:
 
 jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+    - name: Install az ml extension
+      run: az extension add -n ml -y
   train-model:
     runs-on: ubuntu-latest
     steps:
