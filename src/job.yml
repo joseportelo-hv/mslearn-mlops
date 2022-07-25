@@ -16,6 +16,8 @@
 #description: 
 # ### ORIGINAL ###
 
+# shell (dekstop) command: `az ml job create --file .\mslearn-mlops-main\src\job.yml -g rg-dev-mlops -w mlw-dev-mlops`
+
 $schema: https://azuremlschemas.azureedge.net/latest/commandJob.schema.json
 code: model
 command: >-
