@@ -16,4 +16,4 @@ jobs:
       run: az extension add -n ml -y
     - name: Trigger Azure Machine Learning job
       run: |
-        az ml job create --file src/job.yml
+        az ml job create --file src/job.yml -g rg-dev-mlops -w mlw-dev-mlops
